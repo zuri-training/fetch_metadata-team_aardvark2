@@ -6,6 +6,7 @@
 body {
   background-color: #dae3e5;
   padding: 10px 30px;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -65,7 +66,6 @@ a {
 }
 .main-content {
   display: flex;
-  justify-content: ;
   gap: 114px;
   width: 100%;
 }
