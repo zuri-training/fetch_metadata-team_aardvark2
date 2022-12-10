@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.noti-set {
+  color: #edf0ff;
+  margin-bottom: 45px;
+}
+.right-panel {
+  width: 70%;
+  padding: 56px 24px 53px 99px;
+}
+
+.btns {
+  display: flex;
+  gap: 48px;
+  position: relative;
+  bottom: 5px;
+}
+
+.input-not {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.label-not {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+#nettest {
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  color: #dae3e5;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+.dir {
+  padding-bottom: 20px;
+  color: #dae3e5;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
