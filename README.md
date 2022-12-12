@@ -2,6 +2,8 @@
 
 ## We are creating a platform that collects and displays metadata of uploaded files.
 
+<img width="1438" alt="Logo" src="./Assets/Images/Logo.png">
+
 ### Metafetch is a project created by **Team-aardvark2** in the second cohort of the Zuri Training, 2022.
 
 > [Team](https://github.com/orgs/zuri-training/teams/team_aardvark2)
@@ -9,6 +11,8 @@
 > [Research Documentation](https://docs.google.com/document/d/1LUrnBbn_JE7JJV9JiOFMv5js09QuVK6yjCo8oeLt7bA/edit?usp=sharing)
 
 > [Team Project](https://github.com/orgs/zuri-training/projects/527)
+
+> [Figma Designs](https://www.figma.com/file/bxXEU7mlgBNKaSE5gRQlWQ/Team-AARDVARK2-%2F-FINAL-DESIGN?node-id=1%3A2&t=qGDf5wzIA98gPkMs-1)
 
 ## Features
 
