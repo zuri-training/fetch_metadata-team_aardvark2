@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metadata Fetch Landing Page</title>
+    <title>MetaFetch | Home</title>
     <link rel="stylesheet" href="./Pages/CSS/style.css">
 
     <!-- Font family -->
@@ -21,8 +21,8 @@
         <div>
             <nav class="navbar">
                 <a href="index.html" class="link">Home</a>
-                <a href="#" class="link">Documentation</a>
-                <a href=".section2" class="link">About Us</a>
+                <a href="./Pages/document.html" class="link">Documentation</a>
+                <a href="#section2" class="link">About Us</a>
                 <a href="./Pages/support.html" class="link">Support</a>
                 <a href="./Pages/signup.html" class="link" id="signup">Sign Up</a>
                 <a href="./Pages/login.html" class="link" id="login">Log In</a>
@@ -103,7 +103,7 @@
             </div>
         </section>
 
-        <section class="section2" style="background-image: url(./Assets/Images/about-us.jpg);">
+        <section class="section2" id="section2" style="background-image: url(./Assets/Images/about-us.jpg);">
             <div class="aboutus">
                 <p>About Us</p>
             </div>
@@ -150,13 +150,19 @@
 
             <div class="divf1">
                 <p class="pf1">MetaFetch</p>
-                <p class="pf1">FAQ</p>
-                <p class="pf1">Support</p>
+                <a href="./Pages/faqs.html">
+                    <p class="pf1">FAQ</p>
+                </a>
+                <a href="./Pages/support.html">
+                    <p class="pf1">Support</p>
+                </a>
             </div>
 
             <div class="divf1">
                 <p class="pf1">Company</p>
-                <p class="pf1">About Us</p>
+                <a href="#section2">
+                    <p class="pf1">About Us</p>
+                </a>
             </div>
         </section>
         <hr>
