@@ -1,0 +1,41 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+body {
+  background-color: #a1c6ea;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+}
+h2 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+p {
+  border: none;
+  width: 50vw;
+  margin: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+#tag {
+  width: 35px;
+  height: 30.5px;
+  top: 8px;
+  left: 10px;
+}
+.foot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

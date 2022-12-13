@@ -1,0 +1,44 @@
+.sec-set {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #dae3e5;
+  margin-bottom: 89px;
+}
+
+#contents {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  color: #dae3e5;
+}
+.content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #dae3e5;
+}
+#par {
+  color: #dae3e5;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  /* width: 312px;
+  height: 54px; */
+  margin-bottom: 26px;
+}
