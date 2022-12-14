@@ -11,18 +11,25 @@
   width: 70%;
   padding: 56px 24px 53px 99px;
 }
-
+.acc-set-mob {
+  display: none;
+}
 .btns {
   display: flex;
   gap: 48px;
   position: relative;
   bottom: 5px;
 }
-
+.main-content-not {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+}
 .input-not {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 50px;
 }
 
 .label-not {
@@ -30,10 +37,16 @@
   flex-direction: column;
   padding-left: 15px;
 }
+.input-mob {
+  display: none;
+}
 
 #nettest {
   display: flex;
   flex-direction: row;
+}
+.toggle-bar {
+  display: none;
 }
 .title {
   color: #dae3e5;
@@ -54,4 +67,59 @@
   line-height: 17px;
   display: flex;
   align-items: center;
+}
+/* .main-content-not {
+  display: none;
+} */
+@media (max-width: 768px) {
+  .acc-set-mob {
+    display: none;
+  }
+  .input-not {
+    gap: 75px;
+  }
+}
+@media (max-width: 425px) {
+  .main-content-not {
+    display: block;
+    /* display: flex; */
+  }
+  .head {
+    font-size: 20px;
+  }
+  .input-not {
+    display: none;
+  }
+  .input-mob {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .toggle-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+  }
+  .noti-set {
+    display: none;
+  }
+  .acc-set-mob {
+    display: block;
+  }
+  .main-content-not,
+  .title,
+  .dir {
+    color: #0c0c10;
+  }
+  .dir {
+    padding-bottom: 59px;
+    font-size: 14px;
+  }
+  .title {
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+  .label-not {
+    padding-left: 1px;
+  }
 }
