@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./Dashboard/dashboard.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </head>
+  <body>
+
+       
+    <header>
+      <!-- Side Menu Section -->
+      <section id="menu">
+        <div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><iconify-icon icon="carbon:close-outline"></iconify-icon></a>
+      </div>
+        <div class="logo">
+            <img src="./Images/Frame 2logo.png" alt="logo">
+        </div>
+        <div class="items">
+
+          <div class="upload-btn">
+            <input type="file" id="fileInput" class="input-btn"/>
+            <button class="menu-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon><span>Upload</span></button>
+          </div>
+         <nav>
+          <ul id="list-items">
+            <li class="menu"><a href="./dashboard1.html" ><iconify-icon icon="material-symbols:space-dashboard-rounded"></iconify-icon>Dashboard</a></li>
+            <li class="menu active"><a href="" style="color: #292626;"><iconify-icon icon="mdi:recent"></iconify-icon></iconify-icon>Recent</a></li>
+            <li class="menu"><a href="./dashboard4.html"><iconify-icon icon="dashicons:cloud-saved"></iconify-icon></iconify-icon>Saved</a></li>
+            <li class="menu"><a href="./dashboard5.html"><iconify-icon icon="material-symbols:download-for-offline"></iconify-icon></iconify-icon>Downloaded</a></li>
+            <li class="menu"><a href="./dashboard6.html"><iconify-icon icon="mdi:trash"></iconify-icon>Trash</a></li>
+            <li class="menu"><a href="support.html" class="s-l" style="color: #507DBC;"><iconify-icon icon="material-symbols:contact-support"></iconify-icon>Support</a></li>
+            <li class="menu"><a href="" class="s-l" style="color: #B62A2A;"><iconify-icon icon="majesticons:logout"></iconify-icon>Logout</a></li> 
+          </ul>
+
+
+         </nav>   
+          
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Navigation Menu  -->
+      <section id="interface">
+        <div class="navigation">
+          <div class="n1">
+            <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <div class="search">
+              <a href=""><iconify-icon icon="material-symbols:search"></iconify-icon></a><input type="search" placeholder="Search">
+            </div>
+          </div>
+
+          <div class="category">
+
+            <form name="myform" id ="myform" action="" method="post">
+              <label class="custom-selector">
+                <select id="sel_id" name="sel_name"  onchange="submitform();">
+                  <option value="">category</option>
+                  <option value=".jpeg">jpeg</option>
+                  <option value=".png">png </option> 
+                  <option value=".pdf">pdf </option> 
+                  <option value=".json">json </option>                     
+                  <option value=".csv">csv </option>                           
+                </select>
+              </label>
+            </form>
+            <iconify-icon icon="gridicons:dropdown"></iconify-icon>
+
+          </div>
+
+          <div class="profile">
+            <a href="settings.html"><iconify-icon icon="carbon:settings"></iconify-icon></a>
+            <a href="./profile.html"> <img src="Assets/Images/Ellipse 1.png" alt="" class="profile-img"></div>
+          </div>
+        </div>
+
+        
+        <div id="nav-menu">
+          <ul class="navbar">
+            <li><a href="#" class="item3">Recent</a></li>
+            <!-- d-e-s is for Downloads, Export and Share -->            
+            <li><a href=# class="d-e-s item2 nav2">Downloads</a> </li>
+            <li><a href=# class="d-e-s">Export</a> </li>
+            <li><a href=# class="d-e-s">Share</a> </li>
+
+          </ul>
+        </div>
+
+        <!-- Values Section-->
+        
+        <div class="values">
+
+
+          <div class="val-box box1">
+            <a href="">
+              <img src="Assets/Images/Rectangle 5aardvark.png">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm3-7l2.363 2.363L14 11l5 7H5l3-4z"/></svg>
+              <div class="name">
+                <span>aardvark.png</span>
+                <iconify-icon icon="ic:outline-more-vert"></iconify-icon>
+              </div>
+            </a>           
+          </div>
+
+          <div class="val-box box2">
+            <a href="">
+              <img src="./Images/Rectangle 5learn.png">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5v1m5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5v3m4-3H17v1h1.5V13H17v2h-1.5V9h3v1.5m-6.5 0h1v3h-1v-3m-5 0h1v1H7v-1Z"/></svg>
+              <div class="name">
+                <span>Learn Meta.pdf</span>
+                <iconify-icon icon="ic:outline-more-vert"></iconify-icon>
+              </div> 
+            </a>                       
+          </div>
+
+          <div class="val-box box3">
+            <a href="">
+                <img src="./Images/Rectangle 5zuri.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm3-7l2.363 2.363L14 11l5 7H5l3-4z"/></svg>
+                <div class="name">
+                <span>logo.png</span>
+                <iconify-icon icon="ic:outline-more-vert"></iconify-icon>
+              </div> 
+            </a>                       
+          </div>
+
+          <div class="val-box box4">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12.823 15.122c-.517 0-.816.491-.816 1.146c0 .661.311 1.126.82 1.126c.517 0 .812-.49.812-1.146c0-.604-.291-1.126-.816-1.126z"/><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM8.022 16.704c0 .961-.461 1.296-1.2 1.296c-.176 0-.406-.029-.557-.08l.086-.615c.104.035.239.06.391.06c.319 0 .52-.145.52-.67v-2.122h.761v2.131zm1.459 1.291c-.385 0-.766-.1-.955-.205l.155-.631c.204.105.521.211.846.211c.35 0 .534-.146.534-.365c0-.211-.159-.331-.564-.476c-.562-.195-.927-.506-.927-.996c0-.576.481-1.017 1.277-1.017c.38 0 .659.08.861.171l-.172.615c-.135-.065-.375-.16-.705-.16s-.491.15-.491.325c0 .215.19.311.627.476c.596.22.876.53.876 1.006c.001.566-.436 1.046-1.362 1.046zm3.306.005c-1.001 0-1.586-.755-1.586-1.716c0-1.012.646-1.768 1.642-1.768c1.035 0 1.601.776 1.601 1.707C14.443 17.33 13.773 18 12.787 18zm4.947-.055h-.802l-.721-1.302a12.64 12.64 0 0 1-.585-1.19l-.016.005c.021.445.031.921.031 1.472v1.016h-.701v-3.373h.891l.701 1.236c.2.354.4.775.552 1.155h.014c-.05-.445-.065-.9-.065-1.406v-.985h.702v3.372zM14 9h-1V4l5 5h-4z"/></svg>
+              <div class="name">
+                <span>fetch_metadata.json</span>
+                <iconify-icon icon="ic:outline-more-vert"></iconify-icon>
+              </div>
+            </a>                        
+          </div>
+
+          <div class="val-box box5">
+            <a href="">
+                <img src="./Images/Rectangle 5zuri.png" alt="">            
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5v1m5 2c0 .8-.7 1.5-1.5 1.5h-2.5V9H13c.8 0 1.5.7 1.5 1.5v3m4-3H17v1h1.5V13H17v2h-1.5V9h3v1.5m-6.5 0h1v3h-1v-3m-5 0h1v1H7v-1Z"/></svg>
+                <div class="name">
+                  <span>zuri.pdf</span>
+                  <iconify-icon icon="ic:outline-more-vert"></iconify-icon>
+                </div>
+            </a>                        
+          </div>
+
+          <div class="val-box box6">
+            <a href="">
+              <img src="./Images/Rectangle 5sheet.png" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M1 1.5A1.5 1.5 0 0 1 2.5 0h8.207L14 3.293V13.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 1 13.5v-12ZM2 6h3v1H3v3h2v1H2V6Zm7 0H6v3h2v1H6v1h3V8H7V7h2V6Zm2 0h-1v3.707l1.5 1.5l1.5-1.5V6h-1v3.293l-.5.5l-.5-.5V6Z" clip-rule="evenodd"/></svg>
+              <div class="name">
+                <span>aardvark.csv</span>
+                <iconify-icon icon="ic:outline-more-vert"></iconify-icon>
+              </div>
+            </a>                        
+          </div>
+
+           <!-- Respnsive upload button -->
+           <div class="upload-btn-mobile">
+            <input type="file" id="fileInput" class="input-btn"/>
+            <button class="mobile-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon></button>
+          </div>
+
+        </div>
+
+        
+      </section>
+    </main>
+    
+
+    <script src="./Dashboard/dashboard.js"></script>  
+  </body>
+</html>

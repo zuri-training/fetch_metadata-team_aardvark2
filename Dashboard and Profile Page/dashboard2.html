@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./Dashboard/dashboard.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </head>
+  <body>
+
+       
+    <header>
+        <!-- Side menu section -->
+      <section id="menu">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><iconify-icon icon="carbon:close-outline"></iconify-icon></a>
+        </div>
+            <div class="logo">
+                <img src="Assets/Images/Frame 2logo.png" alt="logo">
+            </div>
+            <div class="items">
+
+                <div class="upload-btn">
+                    <input type="file" id="fileInput" class="input-btn"/>
+                    <button class="menu-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon><span>Upload</span></button>
+                </div>
+                    
+                <ul>
+                    <li class="active"><a href="" style="color: #292626;"><iconify-icon icon="material-symbols:space-dashboard-rounded"></iconify-icon>Dashboard</a></li>
+                    <li><a href="./dashboard3.html"><iconify-icon icon="mdi:recent"></iconify-icon></iconify-icon>Recent</a></li>
+                    <li><a href="./dashboard4.html"><iconify-icon icon="dashicons:cloud-saved"></iconify-icon></iconify-icon>Saved</a></li>
+                    <li><a href="./dashboard5.html"><iconify-icon icon="material-symbols:download-for-offline"></iconify-icon></iconify-icon>Downloaded</a></li>
+                    <li><a href="./dashboard6.html"><iconify-icon icon="mdi:trash"></iconify-icon>Trash</a></li>
+                    <li><a href="support.html" class="s-l" style="color: #507DBC;"><iconify-icon icon="material-symbols:contact-support"></iconify-icon>Support</a></li>
+                    <li><a href="" class="s-l" style="color: #B62A2A;"><iconify-icon icon="majesticons:logout"></iconify-icon>Logout</a></li> 
+                </ul>
+            </div>
+      </section>
+    </header>
+
+    <main>
+
+        <!-- Navigation Section -->
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                        <div class="search">
+                            <a href=""><iconify-icon icon="material-symbols:search"></iconify-icon></a><input type="search" placeholder="Search">
+                        </div>
+                </div>
+
+                        <div class="category">
+                    
+                            <form name="myform" id ="myform" action="" method="post">
+                                <label class="custom-selector">
+                                    <select id="sel_id" name="sel_name"  onchange="submitform();">
+                                    <option value="">category</option>
+                                    <option value=".jpeg">jpeg</option>
+                                    <option value=".png">png </option> 
+                                    <option value=".pdf">pdf </option> 
+                                    <option value=".json">json </option>                     
+                                    <option value=".csv">csv </option>                           
+                                    </select>
+                                </label>
+                            </form>
+                            <iconify-icon icon="gridicons:dropdown"></iconify-icon>
+
+                        </div>
+
+                    <div class="profile">
+                        <a href="settings.html"><iconify-icon icon="carbon:settings"></iconify-icon></a>
+                        <a href="./profile.html"> <img src="Assets/Images/Ellipse 1.png" alt="" class="profile-img">
+                    </div>
+            </div>
+            </div>
+
+            
+            <div id="nav-menu">
+            <ul class="navbar">
+                    <li><a href="./dashboard1.html" class="d2 m-f">My files</a> </li>
+                    <li class="active2"><a href=# class="item1 item-1">Folders</a> </li>
+                    <!-- d-e-s is for Downloads, Export and Share -->
+                    <li><a href=# class="d-e-s item2">Downloads</a> </li>
+                    <li><a href=# class="d-e-s">Export</a> </li>
+                    <li><a href=# class="d-e-s">Share</a> </li>
+            </ul>
+            </div>
+
+            <!-- Folder Section -->
+
+            <div class="folder">
+
+                <div class="folder-type">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h6l2 2h8q.825 0 1.413.588Q22 7.175 22 8H4v10l2.4-8h17.1l-2.575 8.575q-.2.65-.737 1.038Q19.65 20 19 20Z"/></svg>
+                    </a>
+                    <span>My Images</span>
+                </div>
+
+                <div class="folder-type">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h6l2 2h8q.825 0 1.413.588Q22 7.175 22 8H4v10l2.4-8h17.1l-2.575 8.575q-.2.65-.737 1.038Q19.65 20 19 20Z"/></svg>
+                    </a>
+                    <span>My PDFs</span>
+                </div>
+
+                <div class="folder-type">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h6l2 2h8q.825 0 1.413.588Q22 7.175 22 8H4v10l2.4-8h17.1l-2.575 8.575q-.2.65-.737 1.038Q19.65 20 19 20Z"/></svg>
+                    </a>
+                    <span>JSON files</span>
+                </div>
+
+                <div class="folder-type">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h6l2 2h8q.825 0 1.413.588Q22 7.175 22 8H4v10l2.4-8h17.1l-2.575 8.575q-.2.65-.737 1.038Q19.65 20 19 20Z"/></svg>
+                    </a>
+                    <span>CSV</span>
+                </div>
+
+                 <!-- Responsive upload button -->
+          <div class="upload-btn-mobile">
+            <input type="file" id="fileInput" class="input-btn"/>
+            <button class="mobile-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon></button>
+          </div>
+            </div>
+
+        </section>
+  </main>
+
+  <script src="./Dashboard/dashboard.js"></script> 
+</body>
+</html>
