@@ -10,7 +10,7 @@ class User(models.Model):
     password = models.CharField(max_length=50,  blank=False, null=False, default = "password")
 
 
-class I_mage(models.Model):
+class ImageData(models.Model):
     #user_id = models.ForeignKey("user", on_delete = models.CASCADE)
     id = models.IntegerField(primary_key=True)
     file_name = models.CharField(max_length=50, blank=True, null=True)
@@ -31,7 +31,7 @@ class I_mage(models.Model):
     
 class UserImage(models.Model):
     user_id = models.ForeignKey("User",on_delete=models.CASCADE)
-    image_id = models.ForeignKey("I_mage",on_delete=models.CASCADE)
+    image_id = models.ForeignKey("ImageData",on_delete=models.CASCADE)
 
 class Pdf(models.Model):
     id = models.IntegerField(primary_key=True)
@@ -55,7 +55,7 @@ class UserPdf(models.Model):
     user_id = models.ForeignKey("User",on_delete=models.CASCADE)
     pdf_id = models.ForeignKey("Pdf",on_delete=models.CASCADE)
 
-class J_son(models.Model):
+class JsonData(models.Model):
     id = models.IntegerField(primary_key=True)
     file_name = models.CharField(max_length=50, blank=True, null=True)
     size = models.CharField(max_length=50, blank=True, null=True)
@@ -76,7 +76,7 @@ class J_son(models.Model):
 
 class UserJson(models.Model):
     user_id = models.ForeignKey("User",on_delete=models.CASCADE)
-    json_id = models.ForeignKey("J_son",on_delete=models.CASCADE)
+    json_id = models.ForeignKey("JsonData",on_delete=models.CASCADE)
 
 class Csv(models.Model):
     id = models.IntegerField(primary_key=True)
