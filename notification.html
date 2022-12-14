@@ -95,39 +95,59 @@
             </div>
 
             <div class="label-not">
-              <label for="first">
-                <p class="title">Not Authenticated</p>
-                <p class="dir">
-                  Only receive notifications from this request when you
-                  participate or been @mentioned
-                </p>
-              </label>
-              <label for="second">
-                <p class="title">Authenticated</p>
-                <p class="dir">Receive all notifications from this request.</p>
-              </label>
-              <label for="third">
-                <p class="title">Custom</p>
-                <p class="dir">
-                  You will only be notified for selected events or requests or
-                  products upgrade.
-                </p>
-              </label>
-            </div>
-            <div class="toggle-bar">
-              <img src="/Assets/tog-bar.png" alt="">
-              <img src="/Assets/tog-button.png" alt="">
-              <img src="/Assets/tog-button.png" alt="">
-            </div>
-         
+              <div class="slide-flex">
+                <label class="first" for="first">
+                  <p class="title">Not Authenticated</p>
+                  <p class="dir">
+                    Only receive notifications from this request when you
+                    participate or been @mentioned
+                  </p>
+                </label>
+                <div class="slides">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="slide-flex">
+                <label class="second" for="second">
+                  <p class="title">Authenticated</p>
+                  <p class="dir">
+                    Receive all notifications from this request.
+                  </p>
+                </label>
+                <div class="slides">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="slide-flex">
+                <label class="third" for="third">
+                  <p class="title">Custom</p>
+                  <p class="dir">
+                    You will only be notified for selected events or requests or
+                    products upgrade.
+                  </p>
+                </label>
+                <div class="slides">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
             </div>
           </form>
           <div class="btns">
-          <input type="submit" value="SAVE" id="save" />
-          <input type="submit" value="CANCEL" id="cancel" />
+            <input type="submit" value="SAVE" id="save" />
+            <input type="submit" value="CANCEL" id="cancel" />
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
   </body>
