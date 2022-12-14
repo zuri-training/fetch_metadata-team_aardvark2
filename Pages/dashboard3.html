@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="Pages/CSS/dashboard.css" />
+    <link rel="stylesheet" href="./CSS/dashboard.css" />
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </head>
@@ -30,8 +30,8 @@
           </div>
          <nav>
           <ul id="list-items">
-            <li class="menu active"><a href="" style="color: #292626;"><iconify-icon icon="material-symbols:space-dashboard-rounded"></iconify-icon>Dashboard</a></li>
-            <li class="menu"><a href="./dashboard3.html"><iconify-icon icon="mdi:recent"></iconify-icon></iconify-icon>Recent</a></li>
+            <li class="menu"><a href="./dashboard1.html" ><iconify-icon icon="material-symbols:space-dashboard-rounded"></iconify-icon>Dashboard</a></li>
+            <li class="menu active"><a href="" style="color: #292626;"><iconify-icon icon="mdi:recent"></iconify-icon></iconify-icon>Recent</a></li>
             <li class="menu"><a href="./dashboard4.html"><iconify-icon icon="dashicons:cloud-saved"></iconify-icon></iconify-icon>Saved</a></li>
             <li class="menu"><a href="./dashboard5.html"><iconify-icon icon="material-symbols:download-for-offline"></iconify-icon></iconify-icon>Downloaded</a></li>
             <li class="menu"><a href="./dashboard6.html"><iconify-icon icon="mdi:trash"></iconify-icon>Trash</a></li>
@@ -84,10 +84,9 @@
         
         <div id="nav-menu">
           <ul class="navbar">
-            <li class="active2"><a href="#" class="m-f">My files</a> </li>
-            <li><a href="./dashboard2.html" class="item1">Folders</a> </li>
-            <!-- d-e-s is for Downloads, Export and Share -->
-            <li><a href=# class="d-e-s item2">Downloads</a> </li>
+            <li><a href="#" class="item3">Recent</a></li>
+            <!-- d-e-s is for Downloads, Export and Share -->            
+            <li><a href=# class="d-e-s item2 nav2">Downloads</a> </li>
             <li><a href=# class="d-e-s">Export</a> </li>
             <li><a href=# class="d-e-s">Share</a> </li>
 
@@ -164,8 +163,8 @@
             </a>                        
           </div>
 
-          <!-- Respnsive upload button -->
-          <div class="upload-btn-mobile">
+           <!-- Respnsive upload button -->
+           <div class="upload-btn-mobile">
             <input type="file" id="fileInput" class="input-btn"/>
             <button class="mobile-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon></button>
           </div>
@@ -177,6 +176,6 @@
     </main>
     
 
-    <script src="Pages/JS/dashboard.js"></script>  
+    <script src="./JS/dashboard.js"></script>  
   </body>
 </html>
