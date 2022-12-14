@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - Security</title>
+
+  <!-- Font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="security.css" />
+  <link rel="stylesheet" href="account.css" />
+</head>
+
+<body>
+  <section class="heads">
+    <div class="logo"><a href="index.html"><img src="Assets/Images/Frame 2logo.png" alt="" /></a></div>
+    <div class="searchs">
+      <img src="Assets/Images/Vector-acc-(2).svg" alt="" />
+      <input type="text" placeholder="search" />
+    </div>
+    <select name="category" id="category" class="cat">
+      <option value="1">category</option>
+      <option value="2">Image</option>
+      <option value="3">PDF</option>
+      <option value="4">JSON</option>
+      <option value="5">CSV</option>
+      <!-- <option value="2">2</option> -->
+    </select>
+    <div class="set-avatar">
+      <div class="set-img"><a href="account.html"><img src="Assets/Images/Vector-acc.svg" alt="" /></a></div>
+      <div class="pro-avatar">
+        <img src="Assets/Images/Ellipse-acc.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <h3 class="head">SECURITY & PRIVACY</h3>
+  <section id="container">
+    <div class="left-panel">
+      <div class="pro-img">
+        <img src="Assets/Images/Ellipse-acc.png" alt="profile pic" />
+      </div>
+      <nav>
+        <ul>
+          <li class="accs">
+            <a href="account.html">Account</a>
+          </li>
+          <li>
+            <a href="password.html">Password</a>
+          </li>
+          <li>
+            <a class="active" href="security.html">Security & privacy</a>
+          </li>
+          <li>
+            <a href="notification.html">Notification</a>
+          </li>
+          <li>
+            <a href="#theme">Theme</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-panel">
+      <h4 class="sec-set">SECURITY & PRIVACY SETTING</h4>
+      <div class="main-contents">
+        <p id="contents">Password is already protected</p>
+        <p class="content">Security question</p>
+        <p id="par">
+          Create or update your security question to verify your identity
+        </p>
+        <p class="content">2 step verification</p>
+        <p id="par">
+          Create a one time security code associated to your mail
+        </p>
+        <p class="content">Auto logout</p>
+        <p id="par">
+          Set the auto logout time to discover your account from all sessions
+        </p>
+        <p class="content">Cookie preference</p>
+        <p id="par">Review the info you are sharing or updating</p>
+      </div>
+      <div class="btns">
+        <input type="submit" value="SAVE" id="save" />
+        <input type="submit" value="CANCEL" id="cancel" />
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - Account</title>
+
+  <!-- Font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="account.css" />
+</head>
+
+<body>
+  <section class="heads">
+    <div class="logo"><a href="index.html"><img src="Assets/Images/Frame 2logo.png" alt="" /></a></div>
+    <div class="searchs">
+      <img src="Assets/Images/Vector-acc-(2).svg" alt="">
+      <input type="text" placeholder="search" />
+    </div>
+    <select name="Category" id="category" class="cat">
+      <option value="1">category</option>
+      <option value="2">Image</option>
+      <option value="3">PDF</option>
+      <option value="4">JSON</option>
+      <option value="5">CSV</option>
+      <!-- <option value="2">2</option> -->
+    </select>
+    <div class="set-avatar">
+      <div class="set-img"><a href="account.html"><img src="Assets/Images/Vector-acc.svg" alt="" /></a></div>
+      <div class="pro-avatar"><img src="Assets/Images/Ellipse-acc.png" alt="" /></div>
+    </div>
+  </section>
+
+  <h4 class="head">ACCOUNT</h4>
+  <section id="container">
+    <div class="left-panel">
+      <div class="pro-img"><img src="Assets/Images/Ellipse-acc.png" alt="profile pic" /></div>
+      <nav>
+        <ul>
+          <li class="accs">
+            <a class="active" href="account.html">Account</a>
+          </li>
+          <li>
+            <a href="password.html">Password</a>
+          </li>
+          <li>
+            <a href="security.html">Security & privacy</a>
+          </li>
+          <li>
+            <a href="notification.html">Notification</a>
+          </li>
+          <li>
+            <a href="#theme">Theme</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-panel">
+      <h4 class="acc-set">ACCOUNT SETTING</h4>
+      <div class="main-content">
+        <div class="first-content">
+          <p>First name</p>
+          <input type="text" class="feds" />
+          <p>Email</p>
+          <input type="email" class="feds" />
+          <p>Company/ Username</p>
+          <input type="text" class="feds" />
+        </div>
+        <div class="second-content">
+          <p>Last name</p>
+          <input type="text" class="feds" name="" id="" />
+          <p>Phone Number</p>
+          <input type="text" class="feds" />
+          <p>Location</p>
+          <input type="text" class="feds" />
+        </div>
+      </div>
+      <p class="text">Bio</p>
+      <textarea type="text" name="message" id="bio"></textarea>
+      <div class="btns">
+        <input type="submit" value="SAVE" id="save" />
+        <input type="submit" value="CANCEL" id="cancel" />
+      </div>
+    </div>
+  </section>
+  <div>
+</body>
+
+</html>

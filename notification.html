@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - Notification</title>
+
+  <!-- Font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="notification.css" />
+  <link rel="stylesheet" href="account.css" />
+</head>
+
+<body>
+  <section class="heads">
+    <div class="logo"><a href="index.html"><img src="Assets/Images/Frame 2logo.png" alt="" /></a></div>
+    <div class="searchs">
+      <img src="Assets/Images/Vector-acc-(2).svg" alt="" />
+      <input type="text" placeholder="search" />
+    </div>
+    <select name="Category" id="category" class="cat">
+      <option value="1">Category</option>
+      <option value="2">Image</option>
+      <option value="3">PDF</option>
+      <option value="4">JSON</option>
+      <option value="5">CSV</option>
+      <!-- <option value="2">2</option> -->
+    </select>
+    <div class="set-avatar">
+      <div class="set-img"><a href="account.html"><img src="Assets/Images/Vector-acc.svg" alt="" /></a></div>
+      <div class="pro-avatar">
+        <img src="Assets/Images/Ellipse-acc.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <h3 class="head">NOTIFICATION</h3>
+  <section id="container">
+    <div class="left-panel">
+      <div class="pro-img">
+        <img src="Assets/Images/Ellipse-acc.png" alt="profile pic" />
+      </div>
+      <nav>
+        <ul>
+          <li class="accs">
+            <a href="account.html">Account</a>
+          </li>
+          <li>
+            <a href="password.html">Password</a>
+          </li>
+          <li>
+            <a href="security.html">Security & privacy</a>
+          </li>
+          <li>
+            <a class="active" href="notification.html">Notification</a>
+          </li>
+          <li>
+            <a href="#theme">Theme</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-panel">
+      <h3 class="noti-set">NOTIFICATION SETTING</h3>
+      <div class="main-content">
+        <form id="nettest">
+          <div class="input-not">
+            <input type="radio" id="first" name="age" value="first" />
+            <input type="radio" id="second" name="age" value="second" />
+            <input type="radio" id="third" name="age" value="third" />
+          </div>
+
+          <div class="label-not">
+            <label for="first">
+              <p class="title">Not Authenticated</p>
+              <p class="dir">
+                Only receive notifications from this request when you
+                participate or been @mentioned
+              </p>
+            </label>
+            <label for="second">
+              <p class="title">Authenticated</p>
+              <p class="dir">Receive all notifications from this request.</p>
+            </label>
+            <label for="third">
+              <p class="title">Custom</p>
+              <p class="dir">
+                You will only be notified for selected events or requests or
+                products upgrade.
+              </p>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="btns">
+        <input type="submit" value="SAVE" id="save" />
+        <input type="submit" value="CANCEL" id="cancel" />
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
