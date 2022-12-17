@@ -1,0 +1,156 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Notification</title>
+
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'assets/css/notification.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/account.css' %}" />
+  </head>
+
+  <body>
+      <section class="heads">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="{% static 'assets/images/Frame 2logo.png' %}" alt=""
+        /></a>
+      </div>
+      <div class="searchs">
+        <img src="{% static 'assets/images/Vector-acc-(2).svg' %}" alt="" />
+        <input type="text" placeholder="search" />
+      </div>
+      <select name="Category" id="category" class="cat">
+        <option value="1">Category</option>
+        <option value="2">Image</option>
+        <option value="3">PDF</option>
+        <option value="4">JSON</option>
+        <option value="5">CSV</option>
+        <!-- <option value="2">2</option> -->
+      </select>
+      <div class="set-avatar">
+        <div class="set-img">
+          <a href="account.html"
+            ><img src="{% static 'assets/images/Vector-acc.svg' %}" alt=""
+          /></a>
+        </div>
+        <div class="pro-avatar">
+          <img src="{% static 'assets/images/Ellipse-acc.png' %}" alt="" />
+        </div>
+      </div>
+    </section>
+    <div class="heads-mob">
+      <div class="acc-head">
+        <img src="{% static 'assets/acc-mobile.png' %}" alt="" class="acc-mobile" />
+        <h3 class="head">NOTIFICATION</h3>
+      </div>
+      <div class="heads-suby">
+        <div class="pro-avatar-mob">
+          <img src="{% static 'assets/images/Ellipse-acc.png' %}" alt="" />
+          <p id="name">Kingsley</p>
+        </div>
+      </div>
+    </div>
+    <section id="container">
+      <div class="left-panel">
+        <div class="pro-img">
+          <img src="{% static 'assets/images/Ellipse-acc.png' %}" alt="profile pic" />
+        </div>
+        <nav>
+          <ul>
+            <li class="accs">
+              <a href="{% url 'account' %}">Account</a>
+            </li>
+            <li>
+              <a href="{% url 'password' %}">Password</a>
+            </li>
+            <li>
+              <a href="{% url 'security' %}">Security & privacy</a>
+            </li>
+            <li>
+              <a class="active" href="{% url 'notification' %}">Notification</a>
+            </li>
+            <li>
+              <a href="#theme">Theme</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-panel">
+        <h3 class="noti-set">NOTIFICATION SETTING</h3>
+        <h3 class="acc-set-mob">Notifications</h3>
+        <div class="main-content-not">
+          <form id="nettest">
+            <div class="input-not">
+              <input type="radio" id="first" name="age" value="first" />
+              <input type="radio" id="second" name="age" value="second" />
+              <input type="radio" id="third" name="age" value="third" />
+            </div>
+
+            <div class="label-not">
+              <div class="slide-flex">
+                <label class="first" for="first">
+                  <p class="title">Not Authenticated</p>
+                  <p class="dir">
+                    Only receive notifications from this request when you
+                    participate or been @mentioned
+                  </p>
+                </label>
+                <div class="slides">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="slide-flex">
+                <label class="second" for="second">
+                  <p class="title">Authenticated</p>
+                  <p class="dir">
+                    Receive all notifications from this request.
+                  </p>
+                </label>
+                <div class="slides">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="slide-flex">
+                <label class="third" for="third">
+                  <p class="title">Custom</p>
+                  <p class="dir">
+                    You will only be notified for selected events or requests or
+                    products upgrade.
+                  </p>
+                </label>
+                <div class="slides">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="btns">
+            <input type="submit" value="SAVE" id="save" />
+            <input type="submit" value="CANCEL" id="cancel" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

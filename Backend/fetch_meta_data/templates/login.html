@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/signup.css' %}">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="{% static 'assets/images/Frame 34134login.png' %}" alt="logo"></a>
+    </header>
+
+    <main>
+        <h2>Welcome Back!</h2>
+        <p>Please enter your details</p>
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div class="form-control">
+                <input type="text" name="username" id="username" placeholder="Username">
+            </div>
+
+            <div class="form-control">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <a href="/forgot">
+                <p style="margin-left: 18%; margin-bottom: 20px;">Forgot Password?</p>
+            </a>
+            <button type="submit">Login</button>
+        </form>
+
+        <button id="google">
+            <iconify-icon icon="logos:google-icon" style="margin-right: 10px;"></iconify-icon>Continue using
+            Google
+        </button>
+        <p>Don't have an account? <a href="/signup"><span>Sign Up</span></a></p>
+
+    </main>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+
+</html>

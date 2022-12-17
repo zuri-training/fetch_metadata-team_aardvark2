@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+body {
+  background-color: #dae3e5;
+  padding: 10px 30px;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.head {
+  padding: 20px 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.heads {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchs {
+  border: 1px solid black;
+  padding: 12px 0 12px 15px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 4px;
+}
+.searchs input {
+  border: none;
+  background: none;
+  outline: none;
+}
+.cat {
+  border: 1px solid black;
+  padding: 12px 60px 12px 12px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background: none;
+  border-radius: 4px;
+  outline: none;
+}
+.set-avatar {
+  display: flex;
+  gap: 16.83px;
+  align-items: center;
+}
+.acc-mobile,
+.heads-suby {
+  display: none;
+}
+#container {
+  display: flex;
+  width: 100%;
+  background: #4b76c3;
+}
+.main-content {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  width: 100%;
+}
+.main-content p {
+  color: #edf0ff;
+  margin-bottom: 7px;
+}
+.first-content,
+.second-content {
+  width: 50%;
+}
+.first-content input,
+.second-content input {
+  width: 90%;
+}
+.acc-set {
+  color: #edf0ff;
+  margin-bottom: 45px;
+}
+.left-panel {
+  width: 30%;
+  border-right: 1px solid black;
+
+  text-align: center;
+  padding: 10px 0px;
+}
+.active {
+  font-size: 20px;
+  font-weight: 600;
+}
+nav li {
+  list-style: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  padding: 33px 0;
+}
+.accs {
+  border-top: 1px solid black;
+}
+
+nav li a {
+  color: #edf0ff;
+  text-decoration: none;
+}
+.pro-img {
+  margin-top: 80px;
+  margin-bottom: 68px;
+}
+.right-panel {
+  width: 70%;
+  padding: 56px 24px 53px 99px;
+}
+.acc-set-mob {
+  display: none;
+}
+.main-content-mob {
+  display: none;
+}
+.feds {
+  width: 312px;
+  height: 54px;
+  margin-bottom: 26px;
+  font-size: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.text {
+  color: #edf0ff;
+}
+#bio {
+  width: 94%;
+  height: 84px;
+  font-size: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-right: 8px;
+}
+.btns {
+  display: flex;
+  gap: 48px;
+  width: 70%;
+}
+#save {
+  background: #040507;
+  border-radius: 20px;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  color: #edf0ff;
+  width: 50%;
+}
+#cancel {
+  width: 50%;
+  background: #4b76c3;
+  box-sizing: border-box;
+  border: 2px solid #acc7ff;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  color: #acc7ff;
+}
+#save,
+#cancel {
+  padding: 1rem 5rem;
+  margin-top: 60px;
+  border-radius: 8px;
+  /* border: none; */
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 10px 50px;
+  }
+  .right-panel {
+    padding: 56px 24px 53px 60px;
+  }
+}
+
+@media (max-width: 870px) {
+  .logo,
+  .set-avatar {
+    width: 20%;
+  }
+  .logo img,
+  .set-img img,
+  .pro-avatar img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #save,
+  #cancel {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .heads-mob {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 63px 0 67px;
+    background: #6690de;
+  }
+  .acc-head {
+    display: flex;
+    text-align: center;
+    gap: 3rem;
+    padding-bottom: 50px;
+  }
+
+  .head {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .acc-mobile,
+  .heads-suby {
+    display: block;
+  }
+  .acc-mobile {
+    padding: 2rem;
+  }
+  #container {
+    background: #ffffff;
+  }
+  .acc-set {
+    display: none;
+  }
+  .acc-set-mob {
+    display: block;
+    margin-bottom: 4rem;
+  }
+  .heads,
+  .left-panel {
+    display: none;
+  }
+  .main-content {
+    display: none;
+  }
+  .main-content-mob {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .pro-avatar-mob {
+    display: flex;
+    text-align: center;
+    padding-left: 3rem;
+    gap: 16px;
+  }
+  #name {
+    padding-top: 1rem;
+    font-family: "Inter";
+  }
+  .text-mob,
+  #bio {
+    display: none;
+  }
+
+  .right-panel {
+    width: 100%;
+  }
+  .main-content-mob input,
+  .main-content-mob textarea {
+    width: 90%;
+    background: #f7f6f6;
+    border: none;
+    border-radius: 8px;
+  }
+  .feds {
+    margin-bottom: 39px;
+    font-size: 12px;
+    padding-left: 32px;
+    padding-right: 62px;
+  }
+  #bio-mob {
+    width: 296px;
+    height: 44px;
+    margin-bottom: 39px;
+    font-size: 12px;
+    padding-left: 32px;
+    padding-right: 68px;
+  }
+  .btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+  #save,
+  #cancel {
+    width: 50%;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 1rem 4rem;
+    margin-top: 10px;
+  }
+  #save {
+    padding: 1rem 7rem 1rem 4rem;
+  }
+  #cancel {
+    background: #edf0ff;
+    border: none;
+    padding: 1rem 7rem 1rem 4rem;
+    color: #0c0c10;
+  }
+}

@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="{% static 'assets/css/profile.css' %}">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+<body>
+    <header>
+        <section id="menu">
+              <div class="logo">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><iconify-icon icon="carbon:close-outline"></iconify-icon></a>
+                  <img src="{% static 'assets/images/Frame 2logo.png' %}" alt="logo">
+              </div>
+              <div class="items">
+  
+                  <div class="my-profile">
+                    <h3>My Profile</h3>
+                  </div>
+                      
+                  <ul>
+                      <li><a href="./dashboard1.html"><iconify-icon icon="material-symbols:space-dashboard-rounded"></iconify-icon>Dashboard</a></li>
+                      <li class="active"><a href="" style="color: #292626;"><iconify-icon icon="healthicons:ui-user-profile"></iconify-icon>Profile</a></li>
+                      <li><a href="./settings.html"><iconify-icon icon="dashicons:cloud-saved"></iconify-icon></iconify-icon>Settings</a></li>
+                      <li><a href="./support.html" class="s-l" style="color: #507DBC;"><iconify-icon icon="material-symbols:contact-support"></iconify-icon>Support</a></li>
+                      <li><a href="" class="s-l" style="color: #B62A2A;"><iconify-icon icon="majesticons:logout"></iconify-icon>Logout</a></li> 
+                  </ul>
+              </div>
+        </section>
+      </header>
+
+      <main>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <div class="personal-info">
+                <div class="intro-profile">
+                    <div class="identity">
+                        <h3 class="intro">
+                            <span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>Edit  Profile
+                        </h3>
+                    </div>
+                    <div class="profile1">
+                        <img src="Assets/Images/Ellipse 1.png" alt="png">
+                        <input type="text" class="username" placeholder="username">
+                        <input type="button" value="Edit Button" class="edit-btn">
+                    </div>
+                </div>
+                
+                <!-- Form Section  -->
+                
+                <div class="form">
+                    <form action="" method="get">
+                        <label for="firstname"> First Name</label><br>
+                        <input type="text" placeholder="Enter your first name"><br>
+    
+                        <label for="lastname"> Last Name</label><br>
+                        <input type="text" placeholder="Enter your last name"><br>
+    
+                        <label for="username"> Username</label><br>
+                        <input type="text" placeholder="Enter your username"><br>
+    
+                        <label for="email"> Email</label><br>
+                        <input type="email" name="Email" id="email" placeholder="Enter your email address"><br>
+    
+                        <label for="phonenumber"> Phone Number</label><br>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number"><br>
+
+                       <div class="input-btn">
+                            <input type="submit" value="Update" class="submit-btn">
+                            <input type="reset" value="Cancel" class="cancel-btn">
+                       </div>
+                        
+                    </form>
+                </div>
+                
+            </div>
+          
+          </section>
+      </main>
+      
+<script src="./JS/profile.js"></script>  
+</body>
+</html>
