@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetaFetch - FAQ</title>
+
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'assets/css/faqs.css' %}" />
+  </head>
+
+  <body>
+    <h2 class="text">FAQS</h2>
+    <a href="#"
+      ><img src="{% static 'assets/images/logo-mobile.png' %}" alt="" class="logo-mobile"
+    /></a>
+    <div class="faq-mobile"><h2>FREQUENTLY ASKED QUESTIONS</h2></div>
+    <div class="faq-cont">
+      <div id="first" class="first">
+        <p>Why use fetch meta data?</p>
+        <p class="text">
+          Fetch meta data is encrypted and saves you from losing files. It also
+          protects you from others people having access to your files except you
+          give authorization, you can also make your files accessible to the
+          public.
+        </p>
+      </div>
+      <div class="first">
+        <p>How do I get access to my previously saved files?</p>
+      </div>
+      <div class="first">
+        <p>Can the security of my files be compromised?</p>
+      </div>
+      <div class="first">
+        <p>
+          Can I create or open a profile for several team members to access meta
+          files?
+        </p>
+      </div>
+    </div>
+    <footer class="foot">
+      to contact support <a href="/support">CLICK HERE</a>
+    </footer>
+  </body>
+</html>

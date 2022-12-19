@@ -1,0 +1,161 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>documentation page </title>
+
+    <link rel="stylesheet" href="{% static 'assets/css/document.css' %}">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!--nav bar start-->
+    <header class="header">
+        <div>
+            <img src="{% static 'assets/images/Frame 2logo.png' %}" alt="METADATA FETCH" class="meta">
+
+        </div>
+
+
+        <div>
+            <nav class="navbar">
+                <a href="/document" class="link">Documentation</a>
+                <a href="#" class="link">About Us</a>
+                <a href="/support" class="link">Support</a>
+                <a href="/signup" class="link" id="signup">Sign Up</a>
+                <a href="/login" class="link" id="login">Log In</a>
+            </nav>
+        </div>
+    </header>
+</head>
+
+<body>
+    <div class="letter">
+        <h2>How Can We Help You?</h2>
+    </div>
+    <div class="container">
+        <table class="tablecontainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Search by keywords" class="search">
+                </td>
+                <td>
+                    <a href="#"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <div class="letter2">
+            <h4>Popular topics: Save, Download,Upload, Share, Export, Recent, Trash</h4>
+        </div>
+    </div>
+
+    <!--service box start here -->
+
+    <div class="wrapper">
+        <div class="boxcontainer">
+            <div class="box">
+                <h3>Account Management</h3>
+                <p>Store application-specific data in
+                    <br>the user profile
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Deliverability and bounces</h3>
+                <p>How to Make Sure Your Message Reaches the Inbox </p>
+            </div>
+            <div class="box">
+                <h3>Metafetch Architecture</h3>
+                <p>Make data more accessible to enterprise-wide users.
+                </p>
+            </div>
+            <div class="box2">
+                <h3>Integrations and API</h3>
+                <p>A metadata type defines the structure of application metadata</p>
+            </div>
+            <div class="box2">
+                <h3>Reports</h3>
+                <p>metadata type only supports custom reports; standard reports are not supported. </p>
+            </div>
+            <div class="box2">
+                <h3>Lists and Subscribes</h3>
+                <p>the term List, or Subscriber List, is used to define Internet users who have subscribed to receive.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--service section in form start here-->
+    <div class="wrapper2">
+        <div class="form area">
+            <div class="service-boxcontainer">
+                <div class="service-box">
+                    <img src="{% static 'assets/images/gear.png' %}">
+                    <h3>Account Settings</h3>
+                    <p>Includes changing your email or password and deleting your account</p>
+                </div>
+                <div class="service-box">
+                    <img src="{% static 'assets/images/fix.png' %}">
+                    <h3>Fix a Problem</h3>
+                    <p>Need quick help? Browse for solutions to the most commonly known problems</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="{% static 'assets/images/icons8-downloads-24.png' %}">
+                    <h3>Downloading</h3>
+                    <p>Includes downloading to your systems</p>
+                </div>
+                <div class="service-box">
+                    <img src="{% static 'assets/images/savingicon.png' %}">
+                    <h3>Savings</h3>
+                    <p>Includes Savings to your laptop, Tablet and phone.</p>
+                </div>
+                <div class="service-box">
+                    <img src="{% static 'assets/images/edit-icon.webp' %}">
+                    <h3>Editing and Designing</h3>
+                    <p>Includes images, videos, text, websites, managing designs and folders.</p>
+                </div>
+                <div class="service-box">
+                    <img src="{% static 'assets/images/team.png' %}">
+                    <h3>Teams and Groups</h3>
+                    <p>Includes creating, managing and deleting teams and groups</p>
+                </div>
+                <div class="service-box">
+                    <img src="{% static 'assets/images/support.jpeg' %}">
+                    <h3>Troubleshooting and Support</h3>
+                    <p>Need help faster? Find solution to common issues.</p>
+                </div>
+                <div class="service-box">
+                    <img src="{% static 'assets/images/sharing.png' %}">
+                    <h3>Sharing</h3>
+                    <p>Includes Sharing to your laptop, Tablet and phone.</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+<footer>
+
+    <div class="footer">
+
+        <div>
+            <p>@2022 METAFETCH </p>
+        </div>
+        <div>
+            <p>TERMS OF USE</p>
+        </div>
+        <div>
+            <p>PRIVACY POLICY</p>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

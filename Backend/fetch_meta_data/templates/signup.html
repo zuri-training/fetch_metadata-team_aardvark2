@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/signup.css' %}">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="{% static 'assets/images/Frame 34134login.png' %}" alt="logo"></a>
+    </header>
+
+    <main>
+        <h2>Create an Account</h2>
+        <p>Please enter your details</p>
+        <form action="" id="form" method="POST">
+            {% csrf_token %}
+
+            <div class="form-control">
+                <input type="text" name="username" id="username" placeholder="Username">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+                <iconify-icon icon="bi:exclamation-circle-fill" id="error-icon"></iconify-icon>
+                <br>
+                <small>Error Message</small>
+            </div>
+
+            <button type="submit">Create an Account</button>
+        </form>
+
+        <button id="google" type="submit">
+            <iconify-icon icon="logos:google-icon" style="margin-right: 10px;"></iconify-icon>Continue using
+            Google
+        </button>
+        <p>Already have an account? <a href="/login"><span>Log in</span></a></p>
+
+    </main>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="{% static 'assets/js/validate.js' %}" defer></script>
+</body>
+
+</html>

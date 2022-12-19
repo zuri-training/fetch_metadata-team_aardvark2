@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetaFetch - Support</title>
+
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'assets/css/support.css' %}" />
+  </head>
+
+  <body>
+    <h2 id="head">Support</h2>
+    <a href="#"
+      ><img src="{% static 'assets/logo-mobile.png' %}" alt="" class="logo-mobile"
+    /></a>
+    <div class="sup-mobile"><h2>HOW CAN WE HELP?</h2></div>
+    <div class="searchs">
+      <input type="text" placeholder="Enter a keyword" />
+      <img
+        src="{% static 'assets/images/Vector-acc-(2).svg' %}"
+        alt=""
+        class="vec-mobile"
+      />
+    </div>
+    <div class="texters">
+      <p class="text">
+        If issues persist, please send us an email with your username and
+        details to support@fetchmetadata.com
+      </p>
+      <p class="text">You can call +234714532689, +234714532688</p>
+      <p class="text">On whatsapp @ +23413110110110</p>
+    </div>
+    <div class="mob-texter">
+      <p class="mob-text">Can't find the answers you are looking for?</p>
+      <div id="mob-texters">
+        <p class="mob-text">
+          <a href="#">Click here</a> to chat with our 24/7 support.
+        </p>
+        <img src="{% static 'assets/images/sup-mobile.png' %}" alt="" class="sup-mobile" />
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="icons">
+        <p class="foot-text">contact us on</p>
+        <div class="socials">
+          <img src="{% static 'assets/images/Vector (5)-sup.svg' %}" alt="facebook" id="fb" />
+          <img
+            src="{% static 'assets/images/Vector (6)-sup.svg' %}"
+            alt="linkedin"
+            id="lk"
+          />
+          <img src="{% static 'assets/images/Vector (7)-sup.svg' %}" alt="whatsapp" id="wa" />
+          <img src="{% static 'assets/images/Vector (Stroke)-sup.svg' %}" alt="twitter" id="tw" />
+          <img src="{% static 'assets/images/logos_google-sup.svg' %}" alt="google" id="go" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

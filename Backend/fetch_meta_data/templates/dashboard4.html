@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'assets/css/dashboard.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </head>
+  <body>
+
+       
+    <header>
+        <!-- Side Menu Section -->
+      <section id="menu">
+        <div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><iconify-icon icon="carbon:close-outline"></iconify-icon></a>
+        </div>
+            <div class="logo">
+                <img src="{% static 'assets/images/Frame 2logo.png' %}" alt="logo">
+            </div>
+            <div class="items">
+
+                <div class="upload-btn">
+                    <input type="file" id="fileInput" class="input-btn"/>
+                    <button class="menu-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon><span>Upload</span></button>
+                </div>
+                    
+                <ul>
+                    <li ><a href="/dashboard1" ><iconify-icon icon="material-symbols:space-dashboard-rounded"></iconify-icon>Dashboard</a></li>
+                    <li><a href="/dashboard3"><iconify-icon icon="mdi:recent"></iconify-icon></iconify-icon>Recent</a></li>
+                    <li class="active"><a href="" style="color: #292626;"><iconify-icon icon="dashicons:cloud-saved"></iconify-icon></iconify-icon>Saved</a></li>
+                    <li><a href="/dashboard5"><iconify-icon icon="material-symbols:download-for-offline"></iconify-icon></iconify-icon>Downloaded</a></li>
+                    <li><a href="/dashboard6"><iconify-icon icon="mdi:trash"></iconify-icon>Trash</a></li>
+                    <li><a href="/support" class="s-l" style="color: #507DBC;"><iconify-icon icon="material-symbols:contact-support"></iconify-icon>Support</a></li>
+                    <li><a href="" class="s-l" style="color: #B62A2A;"><iconify-icon icon="majesticons:logout"></iconify-icon>Logout</a></li> 
+                </ul>
+            </div>
+      </section>
+    </header>
+
+    <main>
+
+        <!-- Navigation Section -->
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                        <div class="search">
+                            <a href=""><iconify-icon icon="material-symbols:search"></iconify-icon></a><input type="search" placeholder="Search">
+                        </div>
+                </div>
+
+                        <div class="category">
+                    
+                            <form name="myform" id ="myform" action="" method="POST">
+                                <label class="custom-selector">
+                                    <select id="sel_id" name="sel_name"  onchange="submitform();">
+                                    <option value="">category</option>
+                                    <option value=".jpeg">jpeg</option>
+                                    <option value=".png">png </option> 
+                                    <option value=".pdf">pdf </option> 
+                                    <option value=".json">json </option>                     
+                                    <option value=".csv">csv </option>                           
+                                    </select>
+                                </label>
+                            </form>
+                            <iconify-icon icon="gridicons:dropdown"></iconify-icon>
+
+                        </div>
+
+                    <div class="profile">
+                        <a href="/settings"><iconify-icon icon="carbon:settings"></iconify-icon></a>
+                        <a href="/profile"> <img src="{% static 'assets/images/Ellipse 1.png' %}" alt="" class="profile-img">
+                    </div>
+            </div>
+            </div>
+
+            
+            <div id="nav-menu">
+            <ul class="navbar">
+                    <li><a href="" class="item4">Saved Metadata</a> </li> 
+                    <!-- d-e-s is for Downloads, Export and Share -->                   
+                    <li><a href=# class="d-e-s item2 nav2">Downloads</a> </li>
+                    <li><a href=# class="d-e-s">Export</a> </li>
+                    <li><a href=# class="d-e-s">Share</a> </li>
+            </ul>
+            </div>
+
+            <!-- Saved Metadata Section -->
+
+            <div class=" icons saved">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" d="M14.8 9c.1-.3.2-.6.2-1c0-2.2-1.8-4-4-4c-1.5 0-2.9.9-3.5 2.2c-.3-.1-.7-.2-1-.2C5.1 6 4 7.1 4 8.5c0 .2 0 .4.1.5c-1.8.3-3.1 1.7-3.1 3.5C1 14.4 2.6 16 4.5 16h10c1.9 0 3.5-1.6 3.5-3.5c0-1.8-1.4-3.3-3.2-3.5zm-6.3 5.9l-3.2-3.2l1.4-1.4l1.8 1.8l3.8-3.8l1.4 1.4l-5.2 5.2z"/></svg>
+                <p>Oops! You haven't saved any Metadata yet.</p>
+                <span><a href="">Learn more</a></span>             
+            </div>
+
+
+             <!-- Respnsive upload button -->
+          <div class="upload-btn-mobile">
+            <input type="file" id="fileInput" class="input-btn"/>
+            <button class="mobile-btn" type="file" id="fileInput"  onclick="uploadButton()"><iconify-icon icon="material-symbols:upload"></iconify-icon></button>
+          </div>
+        </section>
+  </main>
+
+  <script src="{% static 'assets/js/dashboard.js' %}"></script> 
+</body>
+</html>

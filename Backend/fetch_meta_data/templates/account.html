@@ -1,0 +1,122 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - Account</title>
+
+  <!-- Font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'assets/css/account.css' %}" />
+</head>
+
+<body>
+  <section class="heads">
+    <div class="logo"><a href="/"><img src="{% static 'assets/images/Frame 2logo.png' %}" alt="" /></a></div>
+    <div class="searchs">
+      <img src="{% static 'assets/images/Vector-acc-(2).svg' %}" alt="">
+      <input type="text" placeholder="search" />
+    </div>
+    <select name="Category" id="category" class="cat">
+      <option value="1">category</option>
+      <option value="2">Image</option>
+      <option value="3">PDF</option>
+      <option value="4">JSON</option>
+      <option value="5">CSV</option>
+      <!-- <option value="2">2</option> -->
+    </select>
+    <div class="set-avatar">
+      <div class="set-img"><a href="/account"><img src="{% static 'assets/images/Vector-acc.svg' %}" alt="" /></a></div>
+      <div class="pro-avatar"><img src="{% static 'assets/images/Ellipse-acc.png' %}" alt="" /></div>
+    </div>
+  </section>
+  <div class="heads-mob">
+    <div class="acc-head">
+    <img src="{% static 'assets/images/acc-mobile.png' %}" alt="" class="acc-mobile">
+    <h4 class="head">ACCOUNT</h4>
+    </div>
+    <div class="heads-suby">
+  <div class="pro-avatar-mob"><img src="{% static 'assets/images/Ellipse-acc.png' %}" alt="" />
+  <p id="name">Kingsley</p>
+</div>
+</div>
+</div>
+  <section id="container">
+    <div class="left-panel">
+      <div class="pro-img"><img src="{% static 'assets/images/Ellipse-acc.png' %}" alt="profile pic" /></div>
+      <nav>
+        <ul>
+          <li class="accs">
+            <a class="active" href="account.html">Account</a>
+          </li>
+          <li>
+            <a href="{% url 'password' %}">Password</a>
+          </li>
+          <li>
+            <a href="{% url 'security' %}">Security & privacy</a>
+          </li>
+          <li>
+            <a href="{% url 'notification' %}">Notification</a>
+          </li>
+          <li>
+            <a href="#theme">Theme</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-panel">
+      <h4 class="acc-set">ACCOUNT SETTING</h4>
+      <h4 class="acc-set-mob"> Edit Account</h4>
+      <div class="main-content">
+        <div class="first-content">
+          <p>First name</p>
+          <input type="text" class="feds" />
+          <p>Email</p>
+          <input type="email" class="feds" />
+          <p>Company/ Username</p>
+          <input type="text" class="feds" />
+        </div>
+        <div class="second-content">
+          <p>Last name</p>
+          <input type="text" class="feds" name="" id="" />
+          <p>Phone Number</p>
+          <input type="text" class="feds" />
+          <p>Location</p>
+          <input type="text" class="feds" />
+        </div>
+      </div>
+      <div class="main-content-mob">
+        
+          <p>First name</p>
+          <input type="text" class="feds" />
+          <p>Last name</p>
+          <input type="text" class="feds" name="" id="" />
+          <p>Email</p>
+          <input type="email" class="feds" />
+          <p>Phone Number</p>
+          <input type="text" class="feds" />
+          <p>Company/ Username</p>
+          <input type="text" class="feds" />
+          <p>Location</p>
+          <input type="text" class="feds" />
+        
+          <p>Bio</p>
+          <textarea type="text" name="message" class="feds"></textarea>
+      </div>
+      <p class="text text-mob">Bio</p>
+      <textarea type="text" name="message" id="bio"  ></textarea>
+      <div class="btns">
+        <input type="submit" value="SAVE" id="save" />
+        <input type="submit" value="CANCEL" id="cancel" />
+      </div>
+    </div>
+  </section>
+  <div>
+</body>
+
+</html>
