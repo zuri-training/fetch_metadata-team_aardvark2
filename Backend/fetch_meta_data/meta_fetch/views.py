@@ -130,8 +130,6 @@ def faqs(request):
     return render(request, 'faqs.html')
 
 
-
-
 class ImageDataList(generics.ListCreateAPIView):
     queryset = ImageData.objects.all()
     serializer_class = ImageDataSerializer
