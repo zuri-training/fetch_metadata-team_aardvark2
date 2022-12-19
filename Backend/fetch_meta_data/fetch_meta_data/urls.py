@@ -15,20 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from django.conf import settings
-
-from django.conf.urls.static import static
-
-#from meta_fetch.views import ImageDataList, ImageDataDetail, PdfList, PdfDetail, JsonDataList, JsonDataDetail, CsvList, CsvDetail 
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),    
-    path('', include('meta_fetch.urls')),
-    #path('api/', include('rest_framework.urls')),
-    
+    path('api/',include('meta_fetch.urls')),
+    #path('api/', include('rest_framework.urls'))
 ]
-
-urlpatterns = urlpatterns+static(settings.MEDIA_URL,
-documents_root=settings.MEDIA_ROOT)
